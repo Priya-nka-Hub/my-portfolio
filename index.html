@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"> Portfolio<span style="color: rgb(245, 203, 17); font-size: 40px; ">.</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li class="services-dropdown"><a href="#services">Services</a>
+					 <ul class="dropdown">
+						<li>Service1</li>
+						<li>Service2</li>
+						<li>Service3</li>
+					 </ul>
+					</li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                    <!-- <button class="hire-btn">Hire Me</button> -->
+                    <i class="fas fa-times" onclick="closemenu()" id="closemenu"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" id="openmenu"></i>
+
+                <div>
+                       <a href="https://github.com/Priya-nka-Hub" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                       </a>
+                       <a href="https://www.linkedin.com/in/priyanka-kumari-77b04b271/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+            </nav>
+            <div class="header-text">
+                <h3>Hi, I'm <span>Priyanka.</span></h3>
+                <h1><span>W</span>eb <span>D</span>esigner</h1>
+                <h3>Web designer and developer from Mumbai, Maharashtra.<br>
+                    I create website to make strong online <br>presence of business.
+                </h3>
+                <br>
+                <br>
+
+                <a href="Priyanka K- Frontend Developer.pdf" download class="btn btn2">Download CV</a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ------About Section------ -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                              <img src="about_img.jpg" alt="Profile Image">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto vel cum ipsa perferendis,
+                        adipisci eum tempora. Atque itaque nihil nobis maxime nisi amet illo laboriosam, voluptatum
+                        optio, sapiente neque sunt. Sit repudiandae tempore doloremque atque. Atque itaque nihil nobis
+                        maxime nisi amet illo laboriosam, voluptatum optio, sapiente neque sunt. Sit repudiandae tempore
+                        doloremque atque.</p>
+                    <br>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')" id="tab-1">Education</p>
+                        <!-- <p class="tab-links" onclick="opentab('skills')" id="tab-2">Skills</p> -->
+                        <p class="tab-links" onclick="opentab('experience')" id="tab-3">Experience</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2015 - 2017</span><br>M.Tech | Computer Science | 9.1 CGPA</li>
+                            <li><span>2010 - 2014</span><br>B.Tech| Computer Science| 76%</li>
+                            <li><span>2008</span><br>Intermediate| Science Stream | 60%</li>
+                            <li><span>2008</span><br>Matriculation| Science Stream | 80%</li>
+                        </ul>
+                    </div>
+
+                    <!-- <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>HTML/CSS</span><br>M.Tech |Computer Science | 9.1 CGPA</li>
+                            <li><span>JavaScript</span><br>B.Tech| Computer Science| 76%</li>
+                            <li><span>BootStrap</span><br>Intermediate| Science Stream | 60%</li>
+                            <li><span>Digital Marketing</span><br>Matriculation| Science Stream | 80%</li>
+                            <li><span>Graphics Designing</span><br>Matriculation| Science Stream | 80%</li>
+                            <li><span>Offpage -SEO</span><br>Matriculation| Science Stream | 80%</li>
+                        </ul>
+                    </div> -->
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-2023</span><br>Digital Marketing Executive |PropSolution | Thane, Maharashtra
+                            </li>
+                            <li><span>2021</span><br>Digital Marketing Executive| Pulse SuperSpeciality Hospital |
+                                Ranchi,
+                                Jharkhand</li>
+                            <li><span>2019-2021</span><br>Digital Marketing Executive| Lexicon Consultants Pvt. Ltd. |
+                                Ranchi, Jharkhand</li>
+                            <li><span>2017-2019</span><br>Social Media Marketing| MyyGate-Free Classified Ads| Ranchi,
+                                Jharkhand</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------Services---------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perferendis eaque
+                        architecto iure, nisi molestias delectus quidem soluta omnis ipsum eligendi vero eum iste, sint
+                        eveniet est repellat vitae numquam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Digital Marketing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perferendis eaque
+                        architecto iure, nisi molestias delectus quidem soluta omnis ipsum eligendi vero eum iste, sint
+                        eveniet est repellat vitae numquam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Graphics Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perferendis eaque
+                        architecto iure, nisi molestias delectus quidem soluta omnis ipsum eligendi vero eum iste, sint
+                        eveniet est repellat vitae numquam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+               
+                
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------Services---------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list skills-list">
+                <div class="">
+                    <img src="html.jpg" alt="">
+                    
+                </div>
+                <div>
+                    <img src="css.png" alt="">
+                   
+                </div>
+
+                <div>
+                 <img src="javascript.png" alt="">
+                   
+                </div>
+                <div>
+                    <img src="react.png" alt="">
+                   
+                </div>
+                <div>
+                    <img src="jquery.png" alt="">
+                   
+                </div>
+
+               
+                
+
+            </div>
+        </div>
+    </div>
+
+      <!-- ---------Certificates---------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Certification</h1>
+            <div class="services-list certificate-list">
+               
+                <div>
+                   <a href="Web Designing.jpeg" target="_blank"> <img src="Web Designing.jpeg" alt=""></a>
+                </div>
+
+                <div>
+                   <a href="ReactJs.jpeg" target="_blank"> <img src="ReactJs.jpeg" alt=""></a>
+                </div>
+
+               
+                
+
+            </div>
+        </div>
+    </div>
+<!-- ............Projects........... -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="services-list my-work">
+                <div class="">
+                    <img src="amazon-project.jpg" alt="">
+                    <h3>Amazon Website Clone</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perferendis eaque
+                        architecto iure, nisi molestias delectus quidem soluta omnis ipsum eligendi vero eum iste, sint
+                        eveniet est repellat vitae numquam.</p>
+                    <a href="https://github.com/Priya-nka-Hub/amazon-website-clone" target="_blank">See Code</a>
+                    <a href="https://priya-nka-hub.github.io/amazon-website-clone/" target="_blank">Live View</a>
+                    </div>
+                <div>
+                   <img src="netflix-project.jpg" alt="">
+                    <h3>Netflix Website Clone</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perferendis eaque
+                        architecto iure, nisi molestias delectus quidem soluta omnis ipsum eligendi vero eum iste, sint
+                        eveniet est repellat vitae numquam.</p>
+                     <a href="https://github.com/Priya-nka-Hub/netflix-website.github.io" target="_blank">See Code</a>
+                    <a href="https://github.com/Priya-nka-Hub/netflix-website.github.io" target="_blank">Live View</a>
+                </div>
+
+                <div>
+                    <img src="cake-shop-website.png" alt="">
+                    <h3>Simple Cake Shop Website</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit perferendis eaque
+                        architecto iure, nisi molestias delectus quidem soluta omnis ipsum eligendi vero eum iste, sint
+                        eveniet est repellat vitae numquam.</p>
+                    <a href="https://github.com/Priya-nka-Hub/cakeshop-website" target="_blank">See Code</a>
+                    <a href="https://priya-nka-hub.github.io/cakeshop-website/" target="_blank">Live View</a>
+                </div>
+
+               
+                
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ----------portfolio---------- -->
+    <!-- <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="amazon-project.jpg" alt="">
+                    <div class="layer">
+                        <h3>Sign-In Page</h3>
+                        <p>Allows you to sign In, Sign-Up, and REset password if you forgotton your password, Set new
+                            password.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/store.jpg" height="300px" alt="">
+
+                    <div class="layer">
+                        <h3>Stationary Website</h3>
+                        <p>Allows you to sign In, Sign-Up, and REset password if you forgotton your password, Set new
+                            password.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/calculator.jpg" alt="">
+
+                    <div class="layer">
+                        <h3>Online calculator</h3>
+                        <p>Allows you to sign In, Sign-Up, and REset password if you forgotton your password, Set new
+                            password.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div> -->
+
+
+    <!-- ---------contact section--------- -->
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p> <i class="fas fa-paper-plane"></i>
+                        priyanka.sah@gmail.com</p>
+                    <p><i class="fas fas fas fa-phone-square-alt"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/MY CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ 2025. All right reserved by Priyanka <i class="fas fa-heart"></i> </p>
+    </div>
+
+    <script>
+        let experience = document.getElementById('experience');
+        let education = document.getElementById('education');
+        let educationTab = document.getElementById('tab-1');
+        let experienceTab = document.getElementById('tab-3');
+
+
+       
+
+        educationTab.onclick = function () {
+
+            experience.style.display = "none";
+            education.style.display = "block";
+            skills.style.display = "none";
+
+        }
+        experienceTab.onclick = function () {
+
+            experience.style.display = "block";
+            education.style.display = "none";
+            skills.style.display = "none";
+
+        }
+
+        //other method using for loop
+        /* var tablinks = document.getElementsByClassName("tab-links");
+         var tabcontents = document.getElementsByClassName("tab-contents");
+ 
+         function opentab(tabname) {
+             for (tablink of tablinks) {
+                 tablink.classList.remove("active-link");
+             }
+             for (tabcontent of tabcontents) {
+                 tabcontent.classList.remove("active-link");
+             }
+             event.currentTarget.classList.add("active-link");
+             document.getElementById(tabname).classList.add("active-tab");
+         }*/
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById('sidemenu');
+        function openmenu() {
+
+            sidemenu.style.right = '0';
+        }
+        function closemenu() {
+            sidemenu.style.right = '-200px'
+        }
+
+// ----------My Js Script------
+
+        /*
+        var sidemenu =document.getElementById('sidemenu');
+        var openmenu =document.getElementById('openmenu');
+        var closemenu =document.getElementById('closemenu');
+        
+        
+        openmenu.onclick = function(){
+            sidemenu.style.right = '0';
+                 
+             }
+        
+             
+        closemenu.onclick = function(){
+            sidemenu.style.right = '-200px';
+                 
+             }
+             */
+
+    </script>
+
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxMpq61ax5qwtiyre9XjwHMUj4bJR_Q70tIY_XXWvmqWzxjSwFFoViRzbpN7-aDr0Ek/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script> -->
+
+</body>
+
+</html>
